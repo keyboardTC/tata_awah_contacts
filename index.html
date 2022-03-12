@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Contact List Management</title>
+        <meta name="description" content="Contact List Management">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/defualt.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/form_style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="pagec-ontainer">
+            <!--------- Header content ---------->       
+            <header>
+                <!-- ------------- MENU -------------------------------- -->
+                <nav aria-label="Primary" class="navigation">
+                    <ul class="menu">
+                        <li><a href="./" target="_self">Contact List</a></li>
+                        <li><a href="./user_profile.html" target="_self">Profile</a> </li>
+                    </ul>
+                </nav>
+                <div id="page-banner">
+
+                </div>
+            </header>      
+
+            <!-- ------------- Main Content ------------- -->
+            <main id="main-container">
+                <article id="contact-article">
+                    <button id="btn-new-contact" class="btn">Create New Contact</button>
+                    <div id="contacts-box">
+                        <section id="contact-lists">
+
+                        </section>
+                        <!-- ========== Add New Contact ======= -->
+                        <section  class="hide">
+                            <img src="./img/cancel.png" alt="cancel icon" id="cancel-icon">
+                            <form action="" method="post" id="form-new-contact">
+                                <legend>NEW CONTACT
+                                    <label for="First-name">First Name</label>
+                                    <input type="text" id="first-name" name="first_name" maxlength="15" placeholder="Enter First Name">
+                                    <label for="Last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last_name" maxlength="15" placeholder="Enter Last Name">
+                          
+                                    <label for="phone">Phone NUmber</label>
+                                    <!-- <input type="tel" id="tel" name="contact_tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Format e.g) 123-570-6538" required> -->
+                                    <input type="tel" id="tel" name="contact_tel"  placeholder="Format e.g) 123-570-6538" required>
+                                    
+                                    <label for="mail">Email</label>
+                                    <input type="email" id="email" name="contact_email" placeholder="Enter Email" required>
+                                              
+                                    <div class="form-gender-div">
+                                            <label>Gender:</label>
+                                            <input type="radio" id="gender_male" value="male" name="user_gender"><label for="male_gender" class="light" required>Male</label><br>
+                                            <input type="radio" id="gender_female" value="female" name="user_gender"><label for="female_gendar" class="light" required>Female</label>
+                                    </div>
+
+                                    <h3>More Information</h3>
+                                    <label for="age">Age</label>
+                                    <input type="number" name="age" id="age" placeholder="Enter Age" max="100" required>
+
+                                    <label for="dob">Date Of Birth</label>
+                                    <input type="date" name="birth_date" id="dob" placeholder="Enter Date of Birth" min="1950-01-01" max="2010-12-30" required>
+                                    
+                                    <label for="decr">Description</label>
+                                    <textarea id="decr" name="contact_description" placeholder="Enter Contact's Description"></textarea>
+
+                                    <label>Hobbies:</label>
+                                    <div id="form-hobbies-div">
+                                        <input type="checkbox" id="sports" value="Sports" name="user_interest"><label class="light" for="Sports">Sports</label>
+                                        <input type="checkbox" id="exercise" value="Exercise" name="user_interest"><label class="light" for="Exercise">Exercise</label>
+                                        <input type="checkbox" id="books" value="Books" name="user_interest"><label class="light" for="Books">Books</label>
+                                        <input type="checkbox" id="driving" value="Driving" name="user_interest"><label class="light" for="Driving">Driving</label>
+                                        <input type="checkbox" id="others" value="Others" name="user_interest"><label class="light" for="Others">Others</label>
+                                    </div>
+                          
+                                    <label for="courses">Education</label>
+                                    <select id="education" name="contact_Education" required>
+                                      <option value=""  selected hidden id="selected-opt">Choose Education</option>
+                                      <optgroup label="Engineering">
+                                        <option value="computer science">Computer Science</option>
+                                        <option value="Information Technology">Information Technology</option>
+                                        <option value="Civil Engineering">Civil Engineering</option>
+                                      </optgroup>
+                                      <optgroup label="Management">
+                                        <option value="finance management">Finance Management</option>
+                                        <option value="technology management">Technology Management</option>
+                                        <option value="marketing management">Marketing Management</option>
+                                      </optgroup>
+                                    </select>
+
+                                    <label for="otherInfor">Other information details</lebal>
+                                    <input type="checkbox" name="otherInfor" id="other-Infor" value="other">
+                                    <textarea id="other-info-details" name="other_info_details" class="" ></textarea>
+
+                                  <button type="submit" id="btn-submit">Submit</button>
+                                </legend>
+                            </form>
+                        </section>
+                    </div>
+                </article>
+            </main>
+        </div>
+        <!-- --------- FOOTER SECTION ----------- -->
+        <footer class="footer">
+            <h2 id="author-details">Tata Awah - 101334251</h2>
+        </footer>
+
+        <script src="./js/script.js" async defer></script>
+        <script src="./js/form_validate.js" async defer></script>
+    </body>
+</html>

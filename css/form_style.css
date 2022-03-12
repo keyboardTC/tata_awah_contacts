@@ -1,0 +1,130 @@
+
+  /* body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-color: #f8f8f9;
+  } */
+
+  .form-gender-div {
+      display: flex;
+      gap: 1em;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      margin-bottom: 0px;
+  }
+
+  .form-gender-div input[type="radio"]{
+    align-self: center;
+  }
+
+  #form-hobbies-div {
+      padding-bottom: .8em;
+    /* display: flex; */
+  }
+
+  
+  form {
+    max-width: 480px;
+    margin: 50px auto;
+    padding: 16px;
+    border: 1px solid #eaeaea;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background-color: #291b1b;
+    border: 1px solid #e5e5e4;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: .2em 1em;
+    height: 48px;
+    width: 100%;
+    color: #fdfeff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 16px;
+    transition: all .2s ease;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #0f868c;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  form button {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 26px;
+    color: #FFF;
+    background-color: var(--btn-color);
+    border-radius: 4px;
+    border: 1px solid #0f868c;
+    text-align: center;
+    width: 100%;
+    cursor:pointer;
+  }
+  
+  fieldset {
+    margin-bottom: 28px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  
+  label {
+    display: block;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+
+  /* ===== My style ======= */
+  input:invalid {
+    /* border: 2px dashed red; */
+    box-shadow: 0 0 5px 1px red;
+  }
+  input:valid {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 5px 1px rgb(3, 3, 3);
+  }
+  #form-new-contact{
+      margin-top: 0px;;
+  }
