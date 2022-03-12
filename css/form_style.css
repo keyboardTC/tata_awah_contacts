@@ -128,3 +128,9 @@
   #form-new-contact{
       margin-top: 0px;;
   }
+  input[type="checkbox"]:checked + label:before {
+    background: #002beb;
+    color: rgb(26, 26, 26);
+    content: "\2713";
+    text-align: center;
+  }

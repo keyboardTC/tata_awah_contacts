@@ -160,7 +160,7 @@ function displayNotes() {
                     <p>Age: ${contact.age}18</p>
                     <p>Gender: ${contact.gender}</p>
                 </div>
-                <p>D.O.B: ${contact.dob}</p>
+                <p>Date Of Birth:  ${contact.dob}</p>
                 <button class="contact__view btn">View Details</button>
                 <button class="contact__delete btn">Delete</button>
             `
