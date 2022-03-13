@@ -17,11 +17,16 @@ document.querySelector('#btn-new-contact').addEventListener('click', (e)=>{
     document.getElementById("tel").disabled = false;
     document.getElementById("gender_male").disabled  = false;
     document.getElementById("gender_female").disabled  = false;
-    document.getElementById(`${hobby.toLowerCase()}`).disabled  = false;
+    document.getElementById(`sports`).disabled  = false;
+    document.getElementById(`exercise`).disabled  = false;
+    document.getElementById(`books`).disabled  = false;
+    document.getElementById(`driving`).disabled  = false;
+    document.getElementById(`others`).disabled  = false;
     document.getElementById(`education`).disabled  = false;
     document.getElementById(`btn-submit`).disabled  = false;
     document.getElementById("age").disabled  = false;
     document.getElementById("dob").disabled  = false;
+    document.getElementById("other-Infor").disabled  = false;
     document.getElementById("decr").disabled  = false; 
     form.reset();
     console.log("new form")

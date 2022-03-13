@@ -32,6 +32,10 @@ form.addEventListener("submit", (e) => {
     });
     validateGender(check);
 
+    if (!data.get("gender")) {
+        return false
+    }
+
     data.append("age", document.getElementById("age").value);   
     data.append("dob", document.getElementById("dob").value);   
     data.append("decr", document.getElementById("decr").value);  
@@ -157,10 +161,10 @@ function displayNotes() {
                 <h2>${contact.fName}</h2>
                 <p>${contact.email}</p>
                 <div class="age-gender-container">
-                    <p>Age: ${contact.age}18</p>
+                    <p>Age: ${contact.age}</p>
                     <p>Gender: ${contact.gender}</p>
                 </div>
-                <p>Date Of Birth:  ${contact.dob}</p>
+                <p>Date Of Birth: ${contact.dob}</p>
                 <button class="contact__view btn">View Details</button>
                 <button class="contact__delete btn">Delete</button>
             `
